@@ -1,0 +1,6 @@
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+
+export default function Contacts() {
+  return <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12"><h1 className="text-3xl font-bold text-[#2d2d2d] mb-8">Контакты</h1><div className="bg-white rounded-xl shadow-md p-6 sm:p-8 grid grid-cols-1 sm:grid-cols-2 gap-6"><Info icon={<Phone />} title="Телефон"><a href="tel:+79108248146" className="text-[#2d2d2d] hover:text-[#f97316] transition-colors">+7 (910) 824-81-46</a></Info><Info icon={<Mail />} title="Email"><a href="mailto:yartep_group@mail.ru" className="text-[#2d2d2d] hover:text-[#f97316] transition-colors">yartep_group@mail.ru</a></Info><Info icon={<MapPin />} title="Адрес"><span>г. Ярославль, ул. Старая Костромская, д. 3А</span></Info><Info icon={<Clock />} title="График работы"><span>с 8:00 до 18:00</span></Info></div></div>;
+}
+function Info({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) { return <div className="flex gap-4"><div className="w-10 h-10 rounded-lg bg-orange-50 text-[#f97316] flex items-center justify-center flex-shrink-0">{icon}</div><div><p className="text-xs uppercase tracking-wide text-gray-400 mb-1">{title}</p><p className="text-sm leading-relaxed">{children}</p></div></div>; }

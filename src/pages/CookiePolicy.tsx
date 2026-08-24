@@ -1,0 +1,3 @@
+export default function CookiePolicy() {
+  return <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12"><div className="bg-white rounded-xl shadow-md p-6 sm:p-10"><h1 className="text-3xl font-bold text-[#2d2d2d] mb-6">Политика использования файлов cookie</h1><p className="text-gray-600 leading-relaxed">Наш сайт использует файлы cookie для обеспечения корректной работы корзины, запоминания ваших предпочтений (например, выбранных фильтров) и сбора анонимной статистики посещений. Мы не передаём ваши данные третьим лицам. Вы можете отключить cookie в настройках браузера, но это может повлиять на функциональность сайта. Продолжая использовать сайт, вы соглашаетесь с использованием cookie.</p></div></div>;
+}
